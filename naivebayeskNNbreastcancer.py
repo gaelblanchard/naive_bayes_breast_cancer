@@ -59,14 +59,11 @@ test_pred = nb_model.predict(test_data[predictor_factors])
 print_results(test_pred,test_data,"numerical_diagnosis")
 #93.57 % test
 #94.33 % train
-#then we create out model based on the training data
-#Then apply it to our test data
-#then we return a table/confusionMatrix that returns our results
+
 
 #kNN
 #subset to change our cancer_data to train our statistical model
 #id diagnosis radius worst perimeter worst area worst concave points worst
-#in RWeka i was easilt able to use IBK function
 #Used 10 k nearest neighbors for classification 
 breast_cancer_norm = cancer_for_norm_data[factors_list]
 data_sample = breast_cancer_norm.sample(frac=0.7, replace=False)
